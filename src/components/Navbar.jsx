@@ -4,16 +4,19 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null); // Mobile menu wrapper reference
+  const menuRef = useRef(null);
 
-  // Menu toggle
+  // Mobile menu toggle
   const toggleMenu = (e) => {
-    e.stopPropagation(); // Prevent click bubbling
+    e.stopPropagation();
     setIsOpen(!isOpen);
   };
 
-  // Close menu on link click
-  const handleLinkClick = () => setIsOpen(false);
+  // Close menu on link click + scroll to top
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+  };
 
   // Close menu if clicked outside
   useEffect(() => {
@@ -50,7 +53,7 @@ const Navbar = () => {
             : "hover:text-blue-400 transition"
         }
       >
-        My project
+        My Project
       </NavLink>
       <NavLink
         to="/about"
@@ -91,8 +94,11 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-blue-600">
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-2xl font-bold text-blue-600"
+        >
           MyPortfolio
         </Link>
 
