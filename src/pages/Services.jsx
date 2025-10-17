@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaCode,
   FaServer,
@@ -8,8 +8,14 @@ import {
   FaFigma,
   FaLock,
 } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   const services = [
     {
       icon: <FaPalette className="text-4xl text-purple-600 mb-3" />,
@@ -63,10 +69,10 @@ const Services = () => {
         </p>
       </div>
 
-      {/* Service Cards */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <div
+            data-aos="flip-left"
             key={index}
             className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl hover:scale-105 transition duration-300 border border-gray-100"
           >

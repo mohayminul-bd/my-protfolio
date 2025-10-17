@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GraduationCap, Code, BookOpen } from "lucide-react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Education = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   const educationData = [
     {
       icon: <GraduationCap size={36} className="text-blue-600" />,
@@ -61,6 +65,7 @@ const Education = () => {
         <div className="relative border-l-4 border-blue-400 pl-8 space-y-12">
           {educationData.map((edu, index) => (
             <div
+              data-aos="zoom-in-up"
               key={index}
               className="relative bg-white/70 backdrop-blur-md border border-blue-100 shadow-lg rounded-2xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >

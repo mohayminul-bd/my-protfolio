@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Briefcase } from "lucide-react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   const experiences = [
     {
       role: "Aspiring Web Developer",
@@ -31,7 +35,7 @@ const Experience = () => {
         </div>
 
         {/* Experience Card */}
-        <div className="grid gap-8 md:grid-cols-1">
+        <div data-aos="flip-right" className="grid gap-8 md:grid-cols-1">
           {experiences.map((exp, index) => (
             <div
               key={index}

@@ -1,12 +1,21 @@
-import React from "react";
-// import profile from "../assets/New folder/image.jpg"; // নিজের image path দিও
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   return (
     <section className="bg-gradient-to-r from-blue-100 via-white to-blue-100 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* -------- Left Side: Text -------- */}
-        <div className="flex-1 text-center md:text-left space-y-6">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="flex-1 text-center md:text-left space-y-6"
+        >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
             Hi, I'm <span className="text-blue-600">Mohayminul Islam</span> 👋
           </h1>
@@ -39,7 +48,12 @@ const Banner = () => {
         </div>
 
         {/* -------- Right Side: Image -------- */}
-        <div className="flex-1 flex justify-center md:justify-end">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          className="flex-1 flex justify-center md:justify-end"
+        >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-blue-100">
             <img
               src="https://i.ibb.co/GQR0khMk/Gemini-Generated-Image-97sd2v97sd2v97sd.png"

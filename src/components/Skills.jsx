@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   const [inView, setInView] = useState(false);
   const sectionRef = useRef(null);
 
@@ -116,6 +120,9 @@ const Skills = () => {
             <div className="space-y-4">
               {softSkills.map((skill, index) => (
                 <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
                   key={index}
                   className="bg-white/70 backdrop-blur-md p-4 rounded-xl shadow-md hover:bg-blue-100 transition-all duration-300"
                 >
