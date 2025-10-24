@@ -10,10 +10,13 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <Education></Education>
-      <Experience></Experience>
-      <Skills></Skills>
-      <ProjectDetails></ProjectDetails>
+
+      <div className="bg-gradient-to-b from-purple-50 via-blue-50 to-purple-100 md:px-20">
+        <Education></Education>
+        <Experience></Experience>
+        <Skills></Skills>
+        <ProjectDetails></ProjectDetails>
+      </div>
       <Footer></Footer>
     </div>
   );

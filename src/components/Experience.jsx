@@ -17,11 +17,8 @@ const Experience = () => {
   ];
 
   return (
-    <section
-      className="bg-gradient-to-b from-purple-100 via-blue-50 to-purple-200 py-20"
-      id="experience"
-    >
-      <div className="max-w-6xl mx-auto px-6 md:px-10">
+    <section className=" py-20" id="experience">
+      <div className="max-w-6xl mx-auto ">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">

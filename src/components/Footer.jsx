@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
 
           <p className="flex items-center gap-2 text-gray-200 text-sm">
-            <FaEnvelope /> mohayminul.dev@gmail.com
+            <FaEnvelope /> mohayminulislam514@gmail.com
           </p>
           <p className="flex items-center gap-2 text-gray-200 text-sm mt-1">
-            <FaPhoneAlt /> +880 1234-567890
+            <FaPhoneAlt /> 01325440591
           </p>
         </div>
       </div>

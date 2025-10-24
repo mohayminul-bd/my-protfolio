@@ -69,11 +69,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="bg-gradient-to-b from-purple-50 via-blue-50 to-purple-100 py-20"
-      id="skills"
-    >
+    <section ref={sectionRef} className=" py-20" id="skills">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         {/* Header */}
         <div className="text-center mb-16">

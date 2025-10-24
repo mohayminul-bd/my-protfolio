@@ -42,11 +42,8 @@ const Education = () => {
   ];
 
   return (
-    <section
-      className="bg-gradient-to-r from-blue-100 via-white to-blue-100 py-20"
-      id="education"
-    >
-      <div className="max-w-6xl mx-auto px-6 md:px-10">
+    <section className=" py-20" id="education">
+      <div className="max-w-6xl mx-auto ">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
