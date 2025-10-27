@@ -45,7 +45,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink
-        to="/project"
+        to="/my-project"
         onClick={handleLinkClick}
         className={({ isActive }) =>
           isActive

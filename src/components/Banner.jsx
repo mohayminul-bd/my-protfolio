@@ -56,7 +56,7 @@ const Banner = () => {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-blue-100">
             <img
-              src="https://i.ibb.co/GQR0khMk/Gemini-Generated-Image-97sd2v97sd2v97sd.png"
+              src="https://i.ibb.co/XxHNcjJc/20251027-1606-image.png"
               alt="Profile"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />

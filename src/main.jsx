@@ -9,7 +9,7 @@ import Home from "./components/home/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Services from "./pages/Services.jsx";
-import ProjectDetails from "./components/ProjectDetails.jsx";
+import MyProject from "./pages/MyProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/project",
-        element: <ProjectDetails></ProjectDetails>,
+        path: "/my-project",
+        element: <MyProject></MyProject>,
       },
       {
         path: "/contact",

@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full bg-gradient-to-b  from-white to-purple-50 min-h-screen py-20 px-6 md:px-20"
+      className="w-full bg-gradient-to-b  from-white to-purple-50 min-h-screen py-20 px-6 md:px-12"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Image */}

@@ -55,7 +55,7 @@ const Skills = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
@@ -70,7 +70,7 @@ const Skills = () => {
 
   return (
     <section ref={sectionRef} className=" py-20" id="skills">
-      <div className="max-w-6xl mx-auto px-6 md:px-10">
+      <div className="max-w-6xl mx-auto ">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
@@ -88,19 +88,21 @@ const Skills = () => {
             <h3 className="text-2xl font-semibold text-blue-600 mb-6">
               Technical Skills
             </h3>
-            <div className="space-y-11 ">
+            <div className="space-y-4">
               {technicalSkills.map((skill, index) => (
                 <div key={index}>
-                  <div className="flex justify-between mb-1">
+                  <div className="flex justify-between mb-1 text-sm sm:text-base">
                     <span className="text-gray-700 font-medium">
                       {skill.name}
                     </span>
-                    <span className="text-gray-500 text-sm">{skill.level}</span>
+                    <span className="text-gray-500">{skill.level}</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div className="w-full bg-gray-200 rounded-full h-3 sm:h-4 overflow-hidden relative">
                     <div
-                      className={`bg-blue-500 h-3 rounded-full transition-all duration-1000`}
-                      style={{ width: inView ? skill.level : "0%" }}
+                      className={`bg-blue-500 h-3 sm:h-4 rounded-full transition-all duration-1500 ease-out absolute left-0 top-0`}
+                      style={{
+                        width: inView ? skill.level : "0%",
+                      }}
                     ></div>
                   </div>
                 </div>

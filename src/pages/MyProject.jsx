@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ProjectDetails = () => {
+const MyProject = () => {
   const projects = [
     {
       title: "Forum message Website",
@@ -85,7 +85,7 @@ const ProjectDetails = () => {
   };
 
   return (
-    <section className=" py-16 px-4 " id="projects">
+    <section className=" py-16 px-4 md:px-16" id="projects">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-2">
           💻 My <span className="text-purple-600">Projects</span>
@@ -186,4 +186,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default MyProject;
