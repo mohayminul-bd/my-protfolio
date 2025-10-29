@@ -10,6 +10,10 @@ import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Services from "./pages/Services.jsx";
 import MyProject from "./pages/MyProject.jsx";
+import From from "./pages/ProjectDetaild/From.jsx";
+import Course from "./pages/ProjectDetaild/Course.jsx";
+import Roommate from "./pages/ProjectDetaild/Roommate.jsx";
+import Job from "./pages/ProjectDetaild/Job.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +39,22 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Services></Services>,
+      },
+      {
+        path: "/form",
+        element: <From></From>,
+      },
+      {
+        path: "/course",
+        element: <Course></Course>,
+      },
+      {
+        path: "/roommate",
+        element: <Roommate></Roommate>,
+      },
+      {
+        path: "/job",
+        element: <Job></Job>,
       },
     ],
   },

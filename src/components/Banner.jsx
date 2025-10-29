@@ -31,15 +31,15 @@ const Banner = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/public/my-resume.pdf"
+              href="/my-resume.pdf"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-md inline-block text-center"
             >
               View Resume/CV
             </a>
             <a
-              href="/public/my-resume.pdf" // public ফোল্ডারে রাখা PDF এর পাথ
-              download="/public/my-resume.pdf" // ডাউনলোড হওয়ার সময় ফাইলের নাম
+              href="/my-resume.pdf" // public ফোল্ডারে রাখা PDF এর পাথ
+              download="/my-resume.pdf" // ডাউনলোড হওয়ার সময় ফাইলের নাম
               className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all shadow-md inline-block text-center"
             >
               Download Resume
