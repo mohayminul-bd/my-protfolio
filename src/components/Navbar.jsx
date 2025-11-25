@@ -121,7 +121,9 @@ const Navbar = () => {
             isOpen ? "max-h-96 py-4" : "max-h-0"
           }`}
         >
-          <div className="flex flex-col space-y-4 p-4 text-lg">{navLinks}</div>
+          <div className="flex flex-col space-y-4 p-4 text-lg text-black">
+            {navLinks}
+          </div>
         </div>
       </div>
     </nav>

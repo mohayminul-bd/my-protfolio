@@ -109,7 +109,7 @@ const MyProject = () => {
             </div>
 
             <NavLink to="/form">
-              <button className="bg-purple-600 px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
+              <button className="bg-purple-600 cursor-pointer px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
                 View Details
               </button>
             </NavLink>
@@ -194,7 +194,7 @@ const MyProject = () => {
             </div>
 
             <NavLink to="/course">
-              <button className="bg-purple-600 px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
+              <button className="bg-purple-600 cursor-pointer px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
                 View Details
               </button>
             </NavLink>
@@ -280,7 +280,7 @@ const MyProject = () => {
             </div>
 
             <NavLink to="/roommate">
-              <button className="bg-purple-600 px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
+              <button className="bg-purple-600 cursor-pointer px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
                 View Details
               </button>
             </NavLink>
@@ -352,7 +352,7 @@ const MyProject = () => {
             </div>
 
             <NavLink to="/job">
-              <button className="bg-purple-600 px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
+              <button className="bg-purple-600 cursor-pointer px-3 py-1 rounded-full text-white text-sm font-medium hover:bg-purple-700 transition mt-3">
                 View Details
               </button>
             </NavLink>

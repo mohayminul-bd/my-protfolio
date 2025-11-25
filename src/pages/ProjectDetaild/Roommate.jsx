@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  FaBullhorn,
-  FaTasks,
   FaUserLock,
   FaListAlt,
   FaClipboardCheck,
@@ -22,36 +20,6 @@ const Roommate = () => {
         platform where users can post, browse, and connect with potential
         roommates based on preferences, location, and budget.
       </p>
-
-      <hr className="my-8 border-t-2 border-blue-300" />
-
-      {/* 🧩 Project Theme */}
-      <h3 className="text-2xl font-bold text-blue-600 flex items-center gap-2 mb-4">
-        <FaTasks className="text-orange-500" />
-        Project Theme & Key Rules
-      </h3>
-      <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-        <li>
-          Help people find compatible roommates based on lifestyle and budget.
-        </li>
-        <li>
-          Must have at least <strong>15 commits (client)</strong> and{" "}
-          <strong>8 commits (server)</strong>.
-        </li>
-        <li>
-          Meaningful <code>README.md</code> with live link and 5+ features.
-        </li>
-        <li>
-          Ensure <strong>mobile, tablet, and desktop responsiveness</strong>.
-        </li>
-        <li>
-          Use <code>.env</code> for Firebase config and MongoDB credentials.
-        </li>
-        <li>
-          Unique design inspired from platforms like{" "}
-          <strong>ThemeForest</strong>.
-        </li>
-      </ul>
 
       <hr className="my-8 border-t-2 border-blue-300" />
 
