@@ -99,7 +99,7 @@ const Navbar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-2xl font-bold text-blue-600"
         >
-          MyPortfolio
+          <h3> Mohayminul islam</h3>
         </Link>
 
         {/* Desktop Menu */}
