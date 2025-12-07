@@ -103,7 +103,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex flex-1 justify-center space-x-8 text-lg">
+        <div className="hidden md:flex flex-1 text-gray-800 justify-center space-x-8 text-lg">
           {navLinks}
         </div>
 
